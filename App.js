@@ -9,7 +9,8 @@ import {
   Platform,
   StyleSheet,
   Text,
-  View
+  View,
+  Image
 } from 'react-native';
 
 const instructions = Platform.select({
@@ -24,6 +25,7 @@ export default class App extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
+        <Image source={require('.//image/gmbr.jpg')} />
         <Text style={styles.welcome}>
           Assalamu'alaikum
         </Text>
@@ -36,6 +38,7 @@ export default class App extends Component<Props> {
         <Text style={styles.blue}>
           No.Absen : 05
         </Text>
+      
       </View>
     );
   }
@@ -46,7 +49,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#1e8e02',
+    backgroundColor: 'white',
   },
   welcome: {
     fontSize: 20,
