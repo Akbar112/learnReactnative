@@ -12,6 +12,7 @@ import {
   View,
   Image
 } from 'react-native';
+import Judul from './Components/Judul';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' +
@@ -25,17 +26,18 @@ export default class App extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
+       <Judul/>
         <Image source={require('.//image/gmbr.jpg')} />
         <Text style={styles.welcome}>
           Assalamu'alaikum
         </Text>
-        <Text style={styles.blue}>
+        <Text style={styles.instructions}>
           Nama  : Akbar Sirajuddin Hanif
         </Text>
-        <Text style={styles.blue}>
+        <Text style={styles.instructions}>
           Kelas : XI RPL 1
         </Text>
-        <Text style={styles.blue}>
+        <Text style={styles.instructions}>
           No.Absen : 05
         </Text>
       
