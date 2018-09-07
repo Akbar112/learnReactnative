@@ -26,7 +26,9 @@ export default class App extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
-       <Judul/>
+       <Judul judul ="Biodata"/>
+       <Judul judul ="Login"/>
+       <Judul judul ="Form"/>
         <Image source={require('.//image/gmbr.jpg')} />
         <Text style={styles.welcome}>
           Assalamu'alaikum
